@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 启用极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="KeyWords" content="首页">
+    <meta name="description" content="首页">
+    <title>首页</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://box16471789691973.nb3.site.my-qcloud.com/img/upimages/favicon.ico"/>
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name='apple-touch-fullscreen' content='yes'/>
+        <meta name="full-screen" content="yes">
+        <!-- SEO友好提示 -->
+    <meta name="applicable-device" content="pc,mobile">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/js/comm/html5shiv.js"></script>
+    <script type="text/javascript" src="/js/comm/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/comm/jquery.min.js"></script>
+    <script type="text/javascript" src="js/comm/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/comm/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/comm/ubox.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/comm/wow.js" charset="utf-8"></script>
+            <script>
+            var js_comm_alert_okButton = '确认',
+             js_comm_alert_cancelButton = '取消',
+             js_comm_alert_login = '登录',
+            js_comm_alert_goreturn = '返回',
+            js_comm_alert_msgTip = '温馨提示!';
+        </script>
+        <script type="text/javascript" src="js/comm/alert.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/0103486%EF%B9%961647229979.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/comm/font/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/comm/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/comm/box.css"/>
+    <link rel="stylesheet" type="text/css" href="css/comm/alert.css"/>
+    <link rel="stylesheet" type="text/css" href="css/comm/comm%EF%B9%961647229979.css"/>
+    <link rel="stylesheet" type="text/css" href="css/0103486%EF%B9%961647229979.css"/>
+    <script>
+        var batchArr = [];
+        var checkLoad = 0;//判断是否是回调完成的
+    </script>
+        <script>
+        var isOpenMobie = 2;
+        var isOpenPad = 2;
+        if (isOpenMobie == 1) {
+            if (isOpenPad == 1) {
+                $("body").css("width", "auto");
+            } else {
+                //是否手机端判断
+                var ua = navigator.userAgent;
+                var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+                    isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+                    isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+                    isMobile = isIphone || isAndroid;
+                if (isMobile) {
+                    $("body").css("width", "1280px");
+                } else {
+                    $("body").css("width", "auto");
+                }
+            }
+        } else {
+            $("body").css("width", "auto");
+            $("head").append("<meta id='headScreen' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport' />");
+        }
+        //手机屏幕尺寸兼容 purewinter 2019-03-26
+        $(window).load(function () {
+            bodyScale();
+        });
+        function bodyScale() {
+            var windowWidth = $(window).width();
+            $("#bodyScale").remove();
+            if (windowWidth < 680) {
+                var scale = windowWidth / 375;
+                $("#headScreen").remove();
+                $("head").append("<meta id='headScreen' content='width=375, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no' name='viewport' />");
+            } else if (windowWidth < 960) {
+                var scale = windowWidth / 960;
+                $("#headScreen").remove();
+                $("head").append("<meta id='headScreen' content='width=960, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no' name='viewport' />");
+            }
+        }
+        $(window).load(function () {
+            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+                setTimeout(function () {
+                    new WOW().init()
+                }, 150)
+            }
+            ;
+        });
+        var DIY_WEBSITE_ID = "29709";
+        var DIY_JS_SERVER = "trial-admin.nb.tencentsite.com";
+    </script>
+            <script src="https://trial-admin.nb.tencentsite.com/exusers/login_html_v9_diy.php?idweb=29709&amp;langid=0&amp;UPermission=all"></script>
+            <script src="https://trial-admin.nb.tencentsite.com/js/backscript.js"></script>
+</head>
+<body>
+<!--这里专门处理百度分享文章显示缩略图不正确的问题，因为百度分享读取的是第一张图片，缩略图尽量在400x400,但是至好宽高都要大于400，前提是具有微信分享功能，图片地址通过jq传入 $(".baiduImg").attr("src",shareImg);-->
+<div class="baiduImgSet" style="display: none;">
+    <img src="img/comm/img_load.gif"  alt="img_load"  class="baiduImg"   data-original="">
+</div>
+    <script type="text/javascript">var Default_isFT = 0;</script>
+<script type="text/javascript" src="js/comm/transform%EF%B9%96201603091.js"></script>
+            <div id="comm_layout_header" class="layout "  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="dh_style_28_1630460162226"
+                 class="view style_28 dh  none wow bounceInDown lockHeightView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="dh"
+                     class="view_contents" >
+<div id="menu" class="menu menuStyle_28">
+	<div class="menuLayout">
+		<ul class="miniMenu columnSet showmobile">
+			<li class="leftBox">
+				<div class="nav"></div>
+				<div class="sidebar icoMenuSet"><i class="fa fa-navicon" onclick="setDhListen('style_01',this)"></i></div>
+				<div class="menuScroll">
+					<ul class="menuUlCopy">
+								<li id="hot" class="rflex" pageid="103486" showmobile=""><a class="mainMenuSet" href="index.html">
+								首页</a>
+								</li>
+								<li class="rflex" pageid="103492" showmobile=""><a class="mainMenuSet" href="server.html">
+								服务器</a>
+								</li>
+								<li class="rflex" pageid="103487" showmobile=""><a class="mainMenuSet" href="new_details.html">
+								新闻详情</a>
+								</li>
+                                
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="menuUl_box columnSet dhAreaSet showpc">
+			<ul class="menuUl dflex maxWidth ">
+                <li id="hot" class="rflex isLi" pageid="103486" showpc="">
+                    <a class="mainMenuSet Nosub" href="index.html">
+                        首页
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="server.html">
+                        服务器
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="member.html">
+                        成员
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="https://space.bilibili.com/1387387251/article">
+                        新闻
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="https://www.bilibili.com/medialist/detail/ml1543683651">
+                        视频
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="http://live.bilibili.com/23422608">
+                        直播间
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="404.html">
+                        论坛
+                    </a>
+                </li>
+             </ul>
+			<div class="subBox">
+				<div class="subBoxContent maxWidth">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 导航栏目有下级时禁止跳转 -->
+<script>
+    /*pc,手机显示隐藏*/
+    function is_mobile(){
+        return window.screen.width<767 || ($('body').width() > 0 && $('body').width() < 767);
+    }
+    $(function(){
+        $("#dh_style_28_1630460162226 li").each(function(){
+                    });
+            })
+</script>
+<!-- 二级菜单宽度自适应 -->
+    <script>
+        function navSwtich(obj) {
+            $(obj).siblings(".menuUlCopy").slideToggle(200);
+            $(obj).toggleClass('ontoggle');
+            $(obj).parent().siblings().find(".menuUlCopy").slideUp(200);
+            $(obj).parent().siblings().find(".fa-angle-down").removeClass('ontoggle');
+        }
+        function subLeft_dh_style_28_1630460162226(){
+            $("#dh_style_28_1630460162226 .menuUl>li").each(function(){
+                $(this).find(".menuUl03").css("left",'100%');
+            })
+        }
+        $(window).resize(function() {
+            subLeft_dh_style_28_1630460162226();
+        })
+        $(function(){
+            $("#dh_style_28_1630460162226 .fa-navicon").click(function(){
+                $("#dh_style_28_1630460162226 .menuUlCopy").each(function(){
+                    $(this).siblings(".fa").show();
+                })
+            })
+            subLeft_dh_style_28_1630460162226();
+                        $("#dh_style_28_1630460162226 .subBox").css("top",$("#dh_style_28_1630460162226 .menuUl_box").height());
+            if($("#dh_style_28_1630460162226 .menuUl").hasClass("noHover")){
+                var tabNum = 0;
+                $("#dh_style_28_1630460162226 .menuUl>li").find(".Onsub").each(function(){
+                    tabNum += 1;
+                    $(this).parent().attr("tabNum",tabNum)
+                })
+                $("#dh_style_28_1630460162226 .menuUl>li .Onsub").mouseover(function(){
+                    $("#dh_style_28_1630460162226 .subBox").show();
+                    var index = $(this).parent().attr("tabNum");
+                    $("#dh_style_28_1630460162226 .subBox .subItems").eq(index-1).fadeIn(100).siblings().hide();
+                                        $("#dh_style_28_1630460162226 .subBox .subMenuImgArea .subMenuImgCon").eq(0).fadeIn(100).siblings().hide();
+                                    })
+                $("#dh_style_28_1630460162226 .subBox").mouseleave(function(){
+                    $(this).hide();
+                })
+                $("#dh_style_28_1630460162226 .menuUl>li .Nosub").mouseover(function(){
+                    $("#dh_style_28_1630460162226 .subBox").hide();
+                })
+                //风格41 42
+            }
+        })
+    </script>
+                </div>
+            </div>
+                        <div id="image_logo_1630459800557"
+                 class="view logo image  none wow bounceIn"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="logoStyle modSet">
+<a href='index.html' target="_self"><img src="img/comm/img_load.gif"  class="imgSet"   data-original="img/first_logo.png" title="" alt="img_load" style="width:auto; height:100%; position:relative; top:0; left:50%; transform:translate(-50%,0);"/></a>
+</div>                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_diy_1630458903" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="image_style_12_1_1630980629199"
+                 class="view style_12_1 image  none wow bounceInUp lockHeightView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_12">
+	<ul class="imgTextUl">
+			<li class="imgTextLi modSet">
+				<a href="javascript:;"  style="display: block;cursor:default;">
+					<div class="imgTBoxArea">
+						<div class="image-box">
+							<div class="imgTBox">
+								<img class="picSet picFit"  src="img/comm/img_load.gif" data-original="" alt="技术学园服务器">
+							</div>
+						</div>
+						<div class="ratio" style="margin-top:100%;"></div>
+					</div>
+					<div class="cont">
+						<div class="name titProSet">TecoCraft服务器</div>
+						<div class="hide_view">
+								<div class="subName defProSet">技术学园服务器</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+                </div>
+            </div>
+                        <div id="button_style_08_1630981496120"
+                 class="view style_08 button  none wow bounceIn lockHeightView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="button"
+                     class="view_contents" >
+                    <script>function btnTop(){$("html,body").animate({scrollTop:"0px"},1000);}function btnBottom(){var bodyH = $("html,body").height();$("html,body").animate({scrollTop:bodyH},1000);}</script><button type="button" class="button_default08  5- btnaSet" onclick="window.open('https://space.bilibili.com/1387387251','_self')">关于我们</button>
+<script type="text/javascript">
+    if(typeof showcart !== 'function'){
+        function showcart(){
+            var langid = 0;
+            if (langid==0 && BodyIsFt) langid = 1;
+            if(window.screen.width<767 || ($('body').width() > 0 && $('body').width() < 767)){
+                location.href = "https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=29709&act=show&lang="+langid+"&ismobile=1";
+            }else{
+                document.getElementById("boxName").innerHTML="";
+                if(document.getElementById("boxClose")) document.getElementById("boxClose").innerHTML="×";
+                document.getElementById("showiframe").src="https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=29709&act=show&lang="+langid+"&v=9";
+                box.Show({width:'1000px', height:'600px'});
+            }
+        }
+    }
+</script>                </div>
+            </div>
+                        <div id="button_style_08_1630981751536"
+                 class="view style_08 button  none wow bounceIn lockHeightView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="button"
+                     class="view_contents" >
+                    <script>function btnTop(){$("html,body").animate({scrollTop:"0px"},1000);}function btnBottom(){var bodyH = $("html,body").height();$("html,body").animate({scrollTop:bodyH},1000);}</script><button type="button" class="button_default08  btnaSet" >联系我们</button>
+<script type="text/javascript">
+    if(typeof showcart !== 'function'){
+        function showcart(){
+            var langid = 0;
+            if (langid==0 && BodyIsFt) langid = 1;
+            if(window.screen.width<767 || ($('body').width() > 0 && $('body').width() < 767)){
+                location.href = "https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=29709&act=show&lang="+langid+"&ismobile=1";
+            }else{
+                document.getElementById("boxName").innerHTML="";
+                if(document.getElementById("boxClose")) document.getElementById("boxClose").innerHTML="×";
+                document.getElementById("showiframe").src="https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=29709&act=show&lang="+langid+"&v=9";
+                box.Show({width:'1000px', height:'600px'});
+            }
+        }
+    }
+</script>                </div>
+            </div>
+                        <div id="banner_style_01_1630461160262"
+                 class="view style_01 banner  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="banner"
+                     class="view_contents" >
+                    <script></script><div class="bannerStyle_1 rotate-3d">
+	<div class="main_visual">
+			<div class="flicking_con">
+					<a href="#" class=""></a>
+					<a href="#" class=""></a>
+					<a href="#" class=""></a>
+					<a href="#" class=""></a>
+			</div>
+		<div class="ground_glass"></div>
+		<div class="main_image">
+				<a class="img_url" href="#"></a>
+				<div class="img-part"><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div></div>
+				<div class="img-part"><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div></div>
+				<div class="img-part"><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div></div>
+				<div class="img-part"><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div></div>
+				<div class="img-part"><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div></div>
+			<a href="javascript:;" class="btn_prev arrowSet"><i class='fa fa-angle-left awesome-font'></i><span class="text-font"></span></a>
+			<a href="javascript:;" class="btn_next arrowSet"><i class='fa fa-angle-right awesome-font'></i><span class="text-font"></span></a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	arrowShow();
+	$(window).resize(function(){
+		arrowShow();
+	});
+	// 箭头显示
+	function arrowShow(){
+		if(window.screen.width<767 || ($('body').width() > 0 && $('body').width() < 767) || navigator.userAgent.indexOf('Mac OS X') != -1){
+			$("#banner_style_01_1630461160262 .bannerStyle_1 .awesome-font").show().siblings().hide();
+		}else{
+			$("#banner_style_01_1630461160262 .bannerStyle_1 .awesome-font").hide().siblings().show();
+		}
+	}
+});
+</script>
+<script type="application/javascript">
+    /*
+     * Banner 轮播图类
+     */
+	var intervaltimer;
+    function Banner(config) {
+        this._default = {
+            'list':[],
+            'length':0,
+            'current':0,
+            'timer':undefined,      // 计时器
+            'view':undefined,           // 视图
+            'flick':undefined,      // 圆点选择器
+            'duration':3,               // 切换时间间隔
+            'animation':0.5         // 动画时间
+        };
+        config = $.extend(true, this._default, config);
+        this.config = config;
+        this.init(config);
+    }
+    Banner.prototype.init = function(config) {
+        this.animateStyle = 'normal';       // 动画效果 ( 根据动画效果, 不同的方法有不同的实现 )
+        this.direction = 'right';   // 当前滚动方向
+        this.view = this.config.view;
+        this.config.length = this.config.list.length;
+        this.config.flick = this.view ? this.view.find(".bannerStyle_1 .flicking_con > a") : undefined;
+    };
+    // 计算下一个要显示的图片的索引
+    // by: 如果没有传入参数, 则使用配置中的数据this.config.current, 否则使用传入的参数
+    Banner.prototype.nextIndex = function(by) {
+        by === undefined && (by = this.config.current);
+        var next = this.direction == 'right' ? by + 1 : by - 1;
+        next >= this.config.length && (next = 0);
+        next < 0 && (next = this.config.length - 1);
+        return next;
+    };
+    //图片链接
+    $url_html = new Array();
+    $i = 0;
+    $url_len = 4;
+            $url_html[0] = "https://www.coldregion.top/photos/4K仓库.jpg";
+            $url_html[1] = "https://www.coldregion.top/photos/4K地狱大厅.jpg";
+            $url_html[2] = "https://www.coldregion.top/photos/4K%C2%B7500days.png";
+            $url_html[3] = "https://www.coldregion.top/photos/4K%C2%B7%E8%83%A1%E6%A1%83.png";
+    $('#banner_style_01_1630461160262 a.img_url').attr('href',$url_html[$i]);
+    // 跳到指定图片
+    Banner.prototype.animateIndex = function(index) {
+        this.endAnimate();
+        if(index >= 0 && index < this.config.length && this.config.current != index) {
+            if(this.config.current < index) {
+                this.direction = 'right';
+                this.config.current = index - 1;
+            } else {
+                this.direction = 'left';
+                this.config.current = index + 1;
+            }
+            this.showIndex(this.config.current);
+            this.startAnimate();
+        }
+    };
+    // 向右动画
+    Banner.prototype.startAnimateRight = function() {
+        this.direction = 'right';
+        this.startAnimate();
+    };
+    // 向左动画
+    Banner.prototype.startAnimateLeft = function() {
+        this.direction = 'left';
+        this.startAnimate();
+    };
+    // 结束动画
+    Banner.prototype.endAnimate = function() {
+			clearTimeout(this.config.timer);
+    };
+	// 结束动画
+	Banner.prototype.hoverEndAnimate = function() {
+			var that = this;
+			intervaltimer = setInterval(function(){
+				clearTimeout(that.config.timer);
+			},100);
+	};
+    Banner.prototype.startAnimate = function() {
+        switch(this.animateStyle) {
+            case 'normal':
+                // 默认效果
+                this.endAnimate();
+                if(this.config.length > 1) {
+                    var prev = this.config.current, next = this.nextIndex(),
+                            end = this.direction == 'right' ? {prev:"-100%", current:"100%"} : {prev:"100%", current:"-100%"};  // 前一个图片和当前图片的最后停留位置
+                    this.config.flick.eq(next).addClass("on").siblings().removeClass("on");
+                    // 执行动画
+                    var banner = this;
+                    this.imgs.eq(prev).stop().animate({"left":end.prev}, this.config.animation, function(){
+                        banner.config.timer = setTimeout(function(){
+                            banner.startAnimate();
+                        },banner.config.duration);
+                    });
+                    this.imgs.eq(next).css({"left":end.current}).stop().animate({"left":"0%"}, this.config.animation);
+                    this.config.current = next;
+                }
+                break;
+            case 'rotate-3d':
+                // 3D旋转效果
+                this.endAnimate();
+                this.updateBgImg();
+                if(this.config.length > 1) {
+                    var prev = this.config.current, next = this.nextIndex();
+                    this.config.flick.eq(next).addClass("on").siblings().removeClass("on");
+                    this.config.current = next;
+                    this.parts.css("transform", "rotateX(" + ((this.direction == 'right' ? ++this.rotate : --this.rotate) * 90) + "deg)");
+                    var banner = this;
+                    this.config.timer = setTimeout(function(){
+                        banner.startAnimate();
+                    },banner.config.duration);
+                }
+                $('#banner_style_01_1630461160262 a.img_url').attr('href',$url_html[this.config.current]);
+                break;
+        }
+    };
+    // 指定显示的图片
+    Banner.prototype.showIndex = function(index) {
+        switch(this.animateStyle) {
+            case 'normal':
+                // 默认效果
+                this.imgs.eq(index).css("left","0%").siblings(".img-item").css("left","100%");
+                this.config.flick.eq(index).addClass("on").siblings().removeClass("on");
+                break;
+            case 'rotate-3d':
+                // 3D旋转效果
+                this.updateFaceBottonTopImg(index);
+                this.config.flick.eq(index).addClass("on").siblings().removeClass("on");
+                break;
+        }
+    };
+    /*
+     * ********************************************
+     * 3D旋转效果 特有函数 begin
+     */
+    // 每次旋转前都需要更新背部的图片
+    Banner.prototype.updateBgImg = function() {
+        // 计算背部要显示的图片
+        var bg_image_index = this.nextIndex(this.nextIndex());
+        // index: 计算背景图片当前显示在哪个img中( 总共有4个图片, 分别位于正面/底部/背部/顶部, 索引分别为0, 1, 2, 3 )
+        var c, index = (c = (this.rotate + 2) % 4) >= 0 ? c : c + 4;
+        var banner = this;
+        // console.log('第',index,'个面-使用更新为第',bg_image_index,'张图');
+        this.parts && this.parts.each(function () {
+            $(this).find('.img:eq('+index+')').css({'background-image': 'url("'+banner.config.list[bg_image_index]+'")'});
+        });
+    };
+    // 更新正面/顶部/底部的图片
+    // index: 要显示哪张图片
+    // 备注: 因为总共有四个面的图片需要更新, 初始化时, 正面/顶部/底部的图片只需更新一次即可 (背部的图片在每次旋转前都需要更新)
+    Banner.prototype.updateFaceBottonTopImg = function(index) {
+        // face, bottom, top: 计算正面/顶部/底部图片当前显示在哪个img中( 总共有4个图片, 分别位于正面/底部/背部/顶部, 索引分别为0, 1, 2, 3 )
+        var c, face = (c = this.rotate % 4) >= 0 ? c : c + 4, bottom, top;
+        bottom = face + 1; bottom >= this.config.length && (bottom = 0);
+        top = face - 1; top < 0 && (top = this.config.length - 1);
+        var banner = this;
+        this.parts && this.parts.each(function () {
+            // console.log('第',face,'个面-使用更新为第',index,'张图');
+            $(this).find('.img:eq('+face+')').css({'background-image': 'url("'+banner.config.list[index]+'")'});
+            // console.log('第',bottom,'个面-使用更新为第',index < banner.config.length - 1 ? index + 1 : 0,'张图');
+            $(this).find('.img:eq('+bottom+')').css({'background-image': 'url("'+banner.config.list[index < banner.config.length - 1 ? index + 1 : 0]+'")'});
+            // console.log('第',top,'个面-使用更新为第',index > 0 ? index - 1 : banner.config.length - 1,'张图');
+            $(this).find('.img:eq('+top+')').css({'background-image': 'url("'+banner.config.list[index > 0 ? index - 1 : banner.config.length - 1]+'")'});
+        });
+    };
+    // 初始化旋转部分: 设置3d旋转的四个面的图片, index表示默认显示哪张图片
+    Banner.prototype.initImgPart = function(index) {
+        var banner = this;
+        this.parts && this.parts.each(function () {
+            $(this).find('.img').each(function (i) {
+                var j = 0;
+                switch (i) {
+                    case 0: j = index; break;   // 正面
+                    case 1: j = index + 1; break;   // 底部
+                    case 2: break;  // 背部
+                    case 3: j = index - 1; break;   // 顶部
+                }
+                j >= banner.config.length && (j = 0);
+                j < 0 && (j = banner.config.length - 1);
+                $(this).css({'background-image': 'url("'+banner.config.list[j]+'")', 'background-repeat':'no-repeat', 'background-color':'#fff'});
+            });
+        });
+    };
+    // 更新旋转部分: 之所以使用定时器, 是因为无法实时获取模块宽度
+    Banner.prototype.updateImgPart = function() {
+        this.parts && this.parts.each(function(index) {
+            $(this).css({
+                "left":$(this).width() * index + "px"
+            });
+            $(this).find(".img").css({
+                "background-position": -$(this).width() * index + "px"
+            });
+        });
+        var banner = this;
+        setTimeout(function () {
+            banner.updateImgPart();
+        }, 800);
+    };
+    /*
+     * 3D旋转效果 特有函数 end
+     * ********************************************
+     */
+    // 图片数据
+    var list_banner_style_01_1630461160262 = [];
+    list_banner_style_01_1630461160262.push('https://www.coldregion.top/photos/4K仓库.jpg');list_banner_style_01_1630461160262.push('https://www.coldregion.top/photos/4K地狱大厅.jpg');list_banner_style_01_1630461160262.push('https://www.coldregion.top/photos/4K%C2%B7500days.png');list_banner_style_01_1630461160262.push('https://www.coldregion.top/photos/4K%C2%B7%E8%83%A1%E6%A1%83.png');
+    var banner_banner_style_01_1630461160262;        // 轮播图对象
+    $(function(){
+        // 创建轮播图
+        $arrHref = new Array();
+        banner_banner_style_01_1630461160262 = new Banner({
+            'list':list_banner_style_01_1630461160262,
+            'view':$('#banner_style_01_1630461160262'),
+            'duration':parseFloat('3') * 1000,
+            'animation':parseFloat('0.3') * 1000
+        });
+                        banner_banner_style_01_1630461160262.view.find('a').each(function (i) {
+            $(this).click(function () {
+                if(!$(this).attr('href')) {
+                    return false;
+                }
+            });
+        });
+        banner_banner_style_01_1630461160262.view.find('a.picSet').each(function(i){
+            $arrHref[i] = $(this).attr('href');
+        });
+        banner_banner_style_01_1630461160262.animateStyle = 'rotate-3d';
+        banner_banner_style_01_1630461160262.rotate = 0; // 旋转计数
+        banner_banner_style_01_1630461160262.wrapper = banner_banner_style_01_1630461160262.view.find('.bannerStyle_1 .main_image');
+        banner_banner_style_01_1630461160262.parts = banner_banner_style_01_1630461160262.wrapper.find('.img-part');
+        banner_banner_style_01_1630461160262.initImgPart(0);
+        banner_banner_style_01_1630461160262.parts.each(function(index) {
+            $(this).css({
+                "transitionDelay": index * (banner_banner_style_01_1630461160262.config.animation / 5 / 1000) + "s"
+            });
+        });
+        banner_banner_style_01_1630461160262.updateImgPart();
+        // 显示指定索引的图片
+        banner_banner_style_01_1630461160262.showIndex(banner_banner_style_01_1630461160262.config.current);
+        // 监听 点击圆点
+        banner_banner_style_01_1630461160262.config.flick.click(function(){
+            banner_banner_style_01_1630461160262.animateIndex($(this).index());
+            $('#banner_style_01_1630461160262 a.img_url').attr('href',$url_html[$(this).index()]);
+            $i = $(this).index();
+            return false;
+        });
+        // 监听 鼠标悬浮时
+        banner_banner_style_01_1630461160262.view.hover(
+                function(){
+                    banner_banner_style_01_1630461160262.hoverEndAnimate();
+                    banner_banner_style_01_1630461160262.view.find(".bannerStyle_1 .btn_prev, .bannerStyle_1 .btn_next").fadeIn();
+                },
+                function(){
+						clearInterval(intervaltimer);
+                    banner_banner_style_01_1630461160262.config.timer = setTimeout(function(){
+                        banner_banner_style_01_1630461160262.startAnimateRight();
+                    },banner_banner_style_01_1630461160262.config.duration);
+                    banner_banner_style_01_1630461160262.view.find(".bannerStyle_1 .btn_prev, .bannerStyle_1 .btn_next").fadeOut()
+                }
+        );
+        // 监听 点击左右按钮
+        banner_banner_style_01_1630461160262.view.find(".btn_prev").click(function() {
+            banner_banner_style_01_1630461160262.startAnimateLeft();
+        });
+        banner_banner_style_01_1630461160262.view.find(".btn_next").click(function() {
+            banner_banner_style_01_1630461160262.startAnimateRight();
+        });
+        // 监听 触摸事件
+        var touchVal = null;
+        document.addEventListener("touchstart", function(e){
+            if($(e.target).is(banner_banner_style_01_1630461160262.view) || $(e.target).closest("#"+banner_banner_style_01_1630461160262.view.attr("id")).length > 0) {
+                touchVal = {};
+                touchVal.downX = e.touches[0].clientX;  // 记录触摸起始位置
+            }
+        }, false);
+        document.addEventListener("touchmove", function(e){
+            if(touchVal && touchVal.downX) {
+                touchVal.moveX = e.touches[0].clientX - touchVal.downX;     // 计算触摸中的偏移位置
+            }
+        }, false);
+        document.addEventListener("touchend", function(e){
+            if(touchVal && touchVal.moveX){
+                if(touchVal.moveX > 30){
+                    banner_banner_style_01_1630461160262.startAnimateLeft();             // 触摸生效
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnvalue = false;
+                    }
+                }else if(touchVal.moveX < -30){
+                    banner_banner_style_01_1630461160262.startAnimateRight();                // 触摸生效
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnvalue = false;
+                    }
+                }
+            }
+            touchVal = null;
+        }, false);
+        // 运行
+        banner_banner_style_01_1630461160262.config.timer = setTimeout(function(){
+            banner_banner_style_01_1630461160262.startAnimateRight();
+        }, banner_banner_style_01_1630461160262.config.duration);
+    });
+</script>
+                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630460399880" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="div_a_includeBlock_1630462625441"
+                 class="view a_includeBlock div  none wow bounceInLeft includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="div_blank_new06_1630463689896"
+                 class="view blank_new06 div  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                
+            </div>
+                        <div id="image_style_01_1630464052144"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="button_style_08_1630464476530"
+                 class="view style_08 button  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                
+<script type="text/javascript">
+    if(typeof showcart !== 'function'){
+        function showcart(){
+            var langid = 0;
+            if (langid==0 && BodyIsFt) langid = 1;
+            if(window.screen.width<767 || ($('body').width() > 0 && $('body').width() < 767)){
+                location.href = "https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=29709&act=show&lang="+langid+"&ismobile=1";
+            }else{
+                document.getElementById("boxName").innerHTML="";
+                if(document.getElementById("boxClose")) document.getElementById("boxClose").innerHTML="×";
+                document.getElementById("showiframe").src="https://trial-admin.nb.tencentsite.com/exusers/u_cart.php?idweb=29709&act=show&lang="+langid+"&v=9";
+                box.Show({width:'1000px', height:'600px'});
+            }
+        }
+    }
+</script>                </div>
+            </div>
+                        <div id="image_style_13_1_1630465801927"
+                 class="view style_13_1 image  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_13_1">
+	<input type='hidden' id='current_page_1' value="3"/>
+	<input type='hidden' id='show_per_page_1' value="3"/>
+	
+</div>
+                </div>
+            </div>
+                        <div id="text_style_01_1630467324512"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    <br>TecoCraft服务器全称TechOpenCraft-Minecraft-Server，简称为TOC服务器。</br>
+                    <br>服务器组织成立于2020年2月22日，组织原名为TGIM（全称Technic Geeks In Minecraft），服务器版本为JE1.14.4，并于2020年4月1日开启服务器第三周目并持续至今。</br>
+                    <br>2021年7月23日，组织更名为TECO，服务器更名为TecoCraft，中文名“技术开放学园”。2021年9至11月，TecoCraft内服逐渐升级至JE1.16.5版本。</br>
+                    <br>2021年12月5日，TECO管理组决定开启跟随主流版本的TecoEX探索服，同时向玩家开启入服审核，招收新人。</br>
+                    </div>
+            </div>
+                        
+                        <div id="text_style_01_1630475189606"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    TecoCraft服务器&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<div>TecoCraft MineCraft Server</div>                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="image_style_01_1630466295893"
+                 class="view style_01 image  none wow bounceInRight"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="photo/High_TEX_LOGO.png" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="image_style_01_1630466255286"
+                 class="view style_01 image  none wow bounceInRight"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="photo/High_TOC_LOGO.png" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630483547743" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="text_style_01_1630483570211"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    关于服务器                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630564787701" class="layout "  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="image_style_12_1_1630571001758"
+                 class="view style_12_1 image  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_12">
+	<ul class="imgTextUl">
+			<li class="imgTextLi modSet">
+				<a href="https://space.bilibili.com/1387387251"  style="display: block;cursor:default;">
+					<div class="imgTBoxArea">
+						<div class="image-box">
+							<div class="imgTBox">
+								<img class="picSet picFit"  src="img/comm/img_load.gif" data-original="img/ico/ic1.png" alt="">
+							</div>
+						</div>
+						<div class="ratio" style="margin-top:100%;"></div>
+					</div>
+					<div class="cont">
+						<div class="name titProSet">视频平台</div>
+						<div class="hide_view">
+								<div class="subName defProSet">我们的成员在YouTube、bilibili、西瓜视频等视频平台上传过视频，您可以搜索TecoCraft观看相关视频。我们服务器的官号已在B站入驻。</div>
+								<div class="btn btnSet">在bilibili上找到我们</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="imgTextLi modSet">
+				<a href="https://discord.gg/nGHvDz55bn"  style="display: block;cursor:default;">
+					<div class="imgTBoxArea">
+						<div class="image-box">
+							<div class="imgTBox">
+								<img class="picSet picFit"  src="img/comm/img_load.gif" data-original="img/ico/ic2.png" alt="">
+							</div>
+						</div>
+						<div class="ratio" style="margin-top:100%;"></div>
+					</div>
+					<div class="cont">
+						<div class="name titProSet">国际交流</div>
+						<div class="hide_view">
+								<div class="subName defProSet">TecoCraft是面向国际的服务器，我们在Discord上有一套完善的频道安排，同时服务器里也有外国成员，有时我们会带团参观外国服务器。</div>
+								<div class="btn btnSet">加入我们的Discord</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="imgTextLi modSet">
+				<a href="https://github.com/Minecraft-TecoCraft-server"  style="display: block;cursor:default;">
+					<div class="imgTBoxArea">
+						<div class="image-box">
+							<div class="imgTBox">
+								<img class="picSet picFit"  src="img/comm/img_load.gif" data-original="img/ico/ic3.png" alt="卓越的行业研究及BI咨询设计基于客户价值创造的行业数字化洞察Model">
+							</div>
+						</div>
+						<div class="ratio" style="margin-top:100%;"></div>
+					</div>
+					<div class="cont">
+						<div class="name titProSet">开发开源</div>
+						<div class="hide_view">
+								<div class="subName defProSet">我们联合开启了GitHub团队仓库，并将内服成员开发的Mods、服务器插件等以开源形式放在GitHub中，供大家下载，可以参考使用。</div>
+								<div class="btn btnSet">查看我们的GitHub</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630566880365" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="div_a_includeBlock_1630566890641"
+                 class="view a_includeBlock div  none wow bounceInLeft includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="image_style_13_1_1630566890808"
+                 class="view style_13_1 image  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_13_1">
+	<input type='hidden' id='current_page_1' value="3"/>
+	<input type='hidden' id='show_per_page_1' value="3"/>
+	<ul class="imgTextUl" id="content_1">
+			
+	</ul>
+</div>
+                </div>
+            </div>
+                        <div id="text_style_01_1630566890819"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                     关于TecoCraft服名和LOGO来源：
+                     TecoCraft，这是个新的人造词，由内服成员商讨而来，为Tech、Open、Craft三词的合体。
+                     <div>
+                        Tech→技术→齿轮→齿轮的外缘为一圈大写字母“T”；
+                     </div>
+                     <div>
+                        Open→开放→云服务→云→齿轮的内缘为大写字母“O”，即圆形；
+                    </div>
+                    <div>
+                        Craft→Minecraft→齿轮与云结合→总体内部LOGO形成一个外接的大写字母“C”。
+                    </div>
+                    <div>
+                        这三个元素相互结合，形成了我们的新LOGO！
+                    </div>
+                    <div>
+                     ——冷域LYOfficial
+                    </div> </div>
+            </div>
+                        <div id="text_style_01_1630566890825"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    我们的服务器                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="div_a_includeBlock_1630567147408"
+                 class="view a_includeBlock div  none wow bounceInUp includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="image_style_01_1630567147663"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="img/ico/icc1.png" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="text_style_01_1630567147670"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                     技术学园
+                    </div>
+            </div>
+                        <div id="text_style_01_1630567147675"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    我们为服内遇到技术问题的成员答疑解惑                </div>
+            </div>
+                        <div id="text_style_01_1630567147679"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    01                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="div_a_includeBlock_1630573326812"
+                 class="view a_includeBlock div  none wow bounceInUp includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="image_style_01_1630573326936"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="img/ico/icc2.png" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="text_style_01_1630573326945"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                     探索世界
+                    </div>
+            </div>
+                        <div id="text_style_01_1630573326948"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    我们开放新版本探索服，论坛申请通过即可入服                </div>
+            </div>
+                        <div id="text_style_01_1630573326955"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    02                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="div_a_includeBlock_1630573342391"
+                 class="view a_includeBlock div  none wow bounceInUp includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="image_style_01_1630573342530"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="img/ico/icc3.png" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="text_style_01_1630573342539"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                     开放交流
+                    </div>
+            </div>
+                        <div id="text_style_01_1630573342542"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    我们向全球开放，欢迎全世界优秀玩家加入我们                </div>
+            </div>
+                        <div id="text_style_01_1630573342546"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    03                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="div_a_includeBlock_1630573354342"
+                 class="view a_includeBlock div  none wow bounceInUp includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="image_style_01_1630573354464"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="img/ico/icc4.png" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="text_style_01_1630573354473"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                     开发共享                </div>
+            </div>
+                        <div id="text_style_01_1630573354477"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    我们开源插件，并为成员提供MC相关下载直通车                </div>
+            </div>
+                        <div id="text_style_01_1630573354485"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    04                </div>
+            </div>
+                            </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630570610395" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="text_style_01_1630570610398"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    最新视频放送                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630573551213" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="div_a_includeBlock_1630573559188"
+                 class="view a_includeBlock div  none wow bounceInUp includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="image_style_01_1630573559725"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="https://i0.hdslb.com/bfs/archive/317c0503d55b57f3bb19263e07a376c21ec292d2.jpg@640w_400h_1c.webp" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="div_blank_new01_1630573600109"
+                 class="view blank_new01 div  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                    <div class="blank_new01">
+<div class="roundcs modSet" ></div>
+</div>
+                </div>
+            </div>
+                        <div id="image_style_12_1_1630573703734"
+                 class="view style_12_1 image  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_12">
+	<ul class="imgTextUl">
+			<li class="imgTextLi modSet">
+				<a href="https://www.bilibili.com/video/BV1v64y1e7jw"  style="display: block;cursor:default;">
+					<div class="imgTBoxArea">
+						<div class="image-box">
+							<div class="imgTBox">
+								<img class="picSet picFit"  src="img/comm/img_load.gif" data-original="https://i0.hdslb.com/bfs/archive/317c0503d55b57f3bb19263e07a376c21ec292d2.jpg@640w_400h_1c.webp" alt="">
+							</div>
+						</div>
+						<div class="ratio" style="margin-top:100%;"></div>
+					</div>
+					<div class="cont">
+						<div class="name titProSet">500日纪念视频</div>
+						<div class="hide_view">
+								<div class="subName defProSet">【TOC】用热爱点燃希望的火光 | TecoCraft服务器500日纪念视频 TecoCraft Server 500-day Anniversary</div>
+								<div class="btn btnSet">点击观看完整视频</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="div_a_includeBlock_1630574572816"
+                 class="view a_includeBlock div  none wow bounceInUp includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="image_style_01_1630574572963"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="https://i1.hdslb.com/bfs/archive/14bed9c9d11f88dddae26cb8c32289bb5b3c9566.jpg@640w_400h_1c.webp" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="div_blank_new01_1630574572973"
+                 class="view blank_new01 div  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                    <div class="blank_new01">
+<div class="roundcs modSet" ></div>
+</div>
+                </div>
+            </div>
+                        <div id="image_style_12_1_1630574572979"
+                 class="view style_12_1 image  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_12">
+	<ul class="imgTextUl">
+			<li class="imgTextLi modSet">
+				<a href="https://www.bilibili.com/video/BV1La41127M9"  style="display: block;cursor:default;">
+					<div class="imgTBoxArea">
+						<div class="image-box">
+							<div class="imgTBox">
+								<img class="picSet picFit"  src="img/comm/img_load.gif" data-original="https://i1.hdslb.com/bfs/archive/14bed9c9d11f88dddae26cb8c32289bb5b3c9566.jpg@640w_400h_1c.webp" alt="">
+							</div>
+						</div>
+						<div class="ratio" style="margin-top:100%;"></div>
+					</div>
+					<div class="cont">
+						<div class="name titProSet">二周年纪念视频</div>
+						<div class="hide_view">
+								<div class="subName defProSet">【TEX】在MC中跨年 | TECO二周年纪念视频 TECO-Team 2 years Anniversary</div>
+								<div class="btn btnSet">点击观看完整视频</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="div_a_includeBlock_1630574581011"
+                 class="view a_includeBlock div  none wow bounceInUp includeView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="image_style_01_1630574581375"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="https://i1.hdslb.com/bfs/archive/74024d14c7ba7f3f087a7c1c3048895c6dcfd548.jpg@640w_400h_1c.webp" title="" alt="描述" id="imageModeShow"/>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                        <div id="div_blank_new01_1630574581387"
+                 class="view blank_new01 div  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                    <div class="blank_new01">
+<div class="roundcs modSet" ></div>
+</div>
+                </div>
+            </div>
+                        <div id="image_style_12_1_1630574581392"
+                 class="view style_12_1 image  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_12">
+	<ul class="imgTextUl">
+			<li class="imgTextLi modSet">
+				<a href="https://www.bilibili.com/video/BV1oM4y157wj"  style="display: block;cursor:default;">
+					<div class="imgTBoxArea">
+						<div class="image-box">
+							<div class="imgTBox">
+								<img class="picSet picFit"  src="img/comm/img_load.gif" data-original="https://i1.hdslb.com/bfs/archive/74024d14c7ba7f3f087a7c1c3048895c6dcfd548.jpg@640w_400h_1c.webp" alt="">
+							</div>
+						</div>
+						<div class="ratio" style="margin-top:100%;"></div>
+					</div>
+					<div class="cont">
+						<div class="name titProSet">胡桃矿坑工程纪念视频</div>
+						<div class="hide_view">
+								<div class="subName defProSet">【TOC】我们挖空了206万方块画了一幅像素画——胡桃矿坑项目</div>
+								<div class="btn btnSet">点击观看完整视频</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+                </div>
+            </div>
+                            </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630570636152" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="text_style_01_1630570636153"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    最新新闻公告                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630574649840" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="newsList_style_04_1630574685667"
+                 class="view style_04 newsList  none wow bounceInUp lockHeightView"  data-wow-duration='1s' data-wow-delay='0.25s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="newsList"
+                     class="view_contents" >
+                    <script></script><!--新闻列表区域-->
+<!--pageSet pagecurSet-->
+<div class="boxNewsListStyle_4">
+	<ul id="boxNewsList">
+		<li class="sumary_list modSet">
+				<div class="newPic imgSet">
+					<a href="https://www.bilibili.com/read/cv12295858" target="_self"><img src="img/comm/img_load.gif"  alt="img_load"  class="News_img"   data-original="photo/pageimg/TOC_960.png" ></a>
+					<div class="zTm" style="margin-top:67%"></div>
+				</div>
+			<div class="newCont">
+				<div class="newTitle">
+					<div class="newName">
+							<a class="titleSet newTitle pc" href="https://www.bilibili.com/read/cv12295858" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoCraft服务器公告</div></a>
+							<a class="titleSet newTitle pad" href="https://www.bilibili.com/read/cv12295858" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoCraft服务器公告</div></a>
+							<a class="titleSet newTitle mobile" href="https://www.bilibili.com/read/cv12295858" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoCraft服务器公告</div></a>
+					</div>
+				</div>
+				<div class="newB">
+				</div>
+			</div>
+		</li>
+		<li class="sumary_list modSet">
+				<div class="newPic imgSet">
+					<a href="https://www.bilibili.com/read/cv12360937" target="_self"><img src="img/comm/img_load.gif"  alt="img_load"  class="News_img"   data-original="photo/pageimg/TOC_960.png" ></a>
+					<div class="zTm" style="margin-top:67%"></div>
+				</div>
+			<div class="newCont">
+				<div class="newTitle">
+					<div class="newName">
+							<a class="titleSet newTitle pc" href="https://www.bilibili.com/read/cv12360937" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoCraft服务器审核开启公告（目前审核已结束）</div></a>
+							<a class="titleSet newTitle pad" href="https://www.bilibili.com/read/cv12360937" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoCraft服务器审核开启公告（目前审核已结束）</div></a>
+							<a class="titleSet newTitle mobile" href="https://www.bilibili.com/read/cv12360937" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoCraft服务器审核开启公告（目前审核已结束）</div></a>
+					</div>
+				</div>
+				<div class="newB">
+				</div>
+			</div>
+		</li>
+		<li class="sumary_list modSet">
+				<div class="newPic imgSet">
+					<a href="https://www.bilibili.com/read/cv14090103" target="_self"><img src="img/comm/img_load.gif"  alt="img_load"  class="News_img"   data-original="photo/pageimg/TEX_960.png" ></a>
+					<div class="zTm" style="margin-top:67%"></div>
+				</div>
+			<div class="newCont">
+				<div class="newTitle">
+					<div class="newName">
+							<a class="titleSet newTitle pc" href="https://www.bilibili.com/read/cv14090103" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoEX探索服即将开启！期待您的到来！（目前已开服）</div></a>
+							<a class="titleSet newTitle pad" href="https://www.bilibili.com/read/cv14090103" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoEX探索服即将开启！期待您的到来！（目前已开服）</div></a>
+							<a class="titleSet newTitle mobile" href="https://www.bilibili.com/read/cv14090103" target="_self" style="-webkit-line-clamp: ;"><div class="overhide">TecoEX探索服即将开启！期待您的到来！（目前已开服）</div></a>
+					</div>
+				</div>
+				<div class="newB">
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<p>组织成立至今累计：</p>
+<span id="runtime_span" style="font-size:30px"></span>
+<!-- 运行时间js -->
+<script type="text/javascript">
+    function show_runtime() {
+        window.setTimeout("show_runtime()", 1000);
+        X = new
+        Date("2/22/2020 00:00:00");
+        Y = new Date();
+        T = (Y.getTime() - X.getTime());
+        M = 24 * 60 * 60 * 1000;
+        a = T / M;
+        A = Math.floor(a);
+        b = (a - A) * 24;
+        B = Math.floor(b);
+        c = (b - B) * 60;
+        C = Math.floor((b - B) * 60);
+        D = Math.floor((c - C) * 60);
+        runtime_span.innerHTML = A + "天" + B + "小时" + C + "分" + D + "秒"
+    }
+    show_runtime();
+</script>
+<!--CSS From Header-->
+<script>//--
+				$(function(){
+					var viewid="newsList_style_04_1630574685667";
+					var sys_url="viewid=newsList_style_04_1630574685667&name=newsList&style=style_04&langid=0&pageid=103486&viewCtrl=newsList&isfb=1";
+					var moreParams='';
+					if(typeof(history.pushState) != 'undefined'){
+						var hstate=JSON.stringify(history.state);
+						if(hstate!='null'&& hstate!=null){
+							eval('var hjson = ' + hstate);
+							moreParams=hjson.moreParamsnewsList_style_04_1630574685667;
+						}
+					}
+					RequestURL(viewid,sys_url,moreParams);
+				})
+			//--</script>
+                </div>
+            </div>
+                            </div>
+            </div>
+                        <div id="layout_1630564814052" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                    </div>
+            </div>
+                        <div id="layout_1630575378462" class="layout "  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                    </div>
+            </div>
+                        <div id="layout_1647221286948" class="layout "  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                    </div>
+            </div>
+                        <div id="comm_layout_footer" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div class="view_contents">
+                                <div id="copyright_style_01_1630575370754"
+                 class="view style_01 copyright  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="copyright"
+                     class="view_contents" >
+                    <div class="copyrightStyle01 modSet">
+        <div class="copyright_view line_view">Copyright @ 2020-2022 TECO-Team All rights reserved.</div>
+        <div class="icp_view line_view"><a target="_blank" href="https://beian.miit.gov.cn/">备案准备</a></div>
+        <div class="lw_view line_view"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44000000000000"><img class="lw_icon"  src="img/comm/img_load.gif" data-original="img/copyright/style_01/beiab.png" alt="粤公网安备44000000000000号">备案预留</a></div>
+</div>
+                </div>
+            </div>
+                        <div id="div_a_includeBlock_1630575385385"
+                 class="view a_includeBlock div  none includeView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="div"
+                     class="view_contents" >
+                                <div id="footerCustom_footerDh_01_1630579660451"
+                 class="view footerDh_01 footerCustom  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="footerCustom"
+                     class="view_contents" >
+<div id="menu" class="menu footerCustom_01">
+	<div class="menuLayout">
+		<div class="menuUl_box columnSet dhAreaSet showpc">
+			<ul class="menuUl dflex maxWidth ">
+                <li id="hot" class="rflex isLi" pageid="103486" showpc="">
+                    <a class="mainMenuSet Nosub" href="index.html">
+                        首页
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="server.html">
+                        服务器
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="member.html">
+                        成员
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="https://space.bilibili.com/1387387251/article">
+                        新闻
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="https://www.bilibili.com/medialist/detail/ml1543683651">
+                        视频
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="http://live.bilibili.com/23422608">
+                        直播间
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="404.html">
+                        论坛
+                    </a>
+                </li>
+			</ul>
+		</div>
+		<div class="menuUl_box columnSet dhAreaSet showmobile">
+			<ul class="menuUl dflex maxWidth ">
+                <li id="hot" class="rflex isLi" pageid="103486" showpc="">
+                    <a class="mainMenuSet Nosub" href="index.html">
+                        首页
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="server.html">
+                        服务器
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="member.html">
+                        成员
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="https://space.bilibili.com/1387387251/article">
+                        新闻
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="https://www.bilibili.com/medialist/detail/ml1543683651">
+                        视频
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="http://live.bilibili.com/23422608">
+                        直播间
+                    </a>
+                </li>
+                <li class="rflex isLi">
+                    <a class="mainMenuSet Nosub" href="404.html">
+                        论坛
+                    </a>
+                </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 导航栏目有下级时禁止跳转 -->
+<script>
+$(function(){
+	if($("#footerCustom_footerDh_01_1630579660451 .menuUl").hasClass("noHover")){
+		var tabNum = 0;
+		$("#footerCustom_footerDh_01_1630579660451 .menuUl>li").find(".Onsub").each(function(){
+			tabNum += 1;
+			$(this).parent().attr("tabNum",tabNum)
+		})
+	}
+})
+</script>
+<!-- 每行显示列数 -->
+<!--  -->
+<script>
+/*pc,手机显示隐藏*/
+function is_mobile(){
+	return window.screen.width<767 || ($('body').width() > 0 && $('body').width() < 767);
+}
+function _checkWindwo(){
+	if(is_mobile()){
+		$("#footerCustom_footerDh_01_1630579660451 .showmobile").show();
+		$("#footerCustom_footerDh_01_1630579660451 .showpc").hide();
+	}else{
+		$("#footerCustom_footerDh_01_1630579660451 .showmobile").hide();
+		$("#footerCustom_footerDh_01_1630579660451 .showpc").show();
+	}
+}
+_checkWindwo();
+$(window).resize(function() {
+	_checkWindwo();
+})
+</script>
+                </div>
+            </div>
+                        <div id="text_style_01_1630580891744"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                
+            </div>
+                        <div id="image_style_13_1_1630581145175"
+                 class="view style_13_1 image  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_13_1">
+	<input type='hidden' id='current_page_1' value="1"/>
+	<input type='hidden' id='show_per_page_1' value="1"/>
+	<ul class="imgTextUl" id="content_1">
+			<li class="imgTextLi modSet">
+				<div class="left">
+					<div class="image-box">
+						<a href="javascript:;" style="cursor:default;">
+							<div class="imgTBox">
+								<img src="img/comm/img_load.gif"  class="imgSet"   data-original="https://cdn.img.sooce.cn/nicetuku/202004/23/png/1587643549280ae03b0322b75204445a2a8eee481def9.png" alt="img_load"/>
+							</div>
+						</a>
+					</div>
+					<div class="ratio" style="margin-top:100%;"></div>
+				</div>
+				<div class="cont">
+					<a href="javascript:;" style="cursor:default;">
+						<div class="name titleSet">联系我们</div>
+					</a>
+				</div>
+			</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+                </div>
+            </div>
+                        <div id="text_style_01_1630581224014"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    QQ群：593960178                </div>
+            </div>
+                        <div id="image_style_13_1_1630581558749"
+                 class="view style_13_1 image  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <!-- pageSet pagecurSet -->
+<div class="imgStyle_13_1">
+	<input type='hidden' id='current_page_1' value="1"/>
+	<input type='hidden' id='show_per_page_1' value="1"/>
+	<ul class="imgTextUl" id="content_1">
+			<li class="imgTextLi modSet">
+				<div class="left">
+					<div class="image-box">
+						<a href="javascript:;" style="cursor:default;">
+							<div class="imgTBox">
+								<img src="img/comm/img_load.gif"  class="imgSet"   data-original="https://cdn.yun.sooce.cn/6/34355/png/163058137275546bd9ff5a3ee0e8d.png?version=1630581061" alt="img_load"/>
+							</div>
+						</a>
+					</div>
+					<div class="ratio" style="margin-top:100%;"></div>
+				</div>
+				<div class="cont">
+					<a href="javascript:;" style="cursor:default;">
+						<div class="name titleSet">邮箱</div>
+					</a>
+				</div>
+			</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+                </div>
+            </div>
+                        <div id="text_style_01_1630581574079"
+                 class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="text"
+                     class="view_contents" >
+                    LY@ColdRegion.top&nbsp;                </div>
+            </div>
+                        <div id="image_style_01_1630580807962"
+                 class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+                <div names="image"
+                     class="view_contents" >
+                    <div class="imgStyle CompatibleImg picSet">
+		<a href='index%EF%B9%96pageid=103486.html' target="">
+			<img class="link-type-"  src="img/comm/img_load.gif" data-original="https://wds-service-1258344699.file.myqcloud.com/20/29709/png/164717998920956fdbcb4e2a85145.png?version=1647179991" title="" alt="描述" id="imageModeShow"/>
+		</a>
+</div>
+<!-- 新加的js  -->
+                </div>
+            </div>
+                            </div>
+            </div>
+                            </div>
+            </div>
+            <div class="bottomMenu 123"><ul><li style="height:100%;padding-top:2px;">
+							<a href="index.html" class="" style=""><div class="menuItem"><div class="menuIco"><img  src="img/comm/img_load.gif" data-original="https://cdn.yun.sooce.cn/6/34355/png/1631181825752b29cecc6f70dacd4.png?version=0" alt="首页"></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#0071dc" ><div class="menuName" style="color:#0071dc;">首页</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(typeof(BodyIsFt) == 'undefined' || BodyIsFt == null){
+				    BodyIsFt = 0;
+                }
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})
+           }
+        })
+        </script><li style="height:100%;padding-top:2px;">
+							<a href="javascript:void(0);" class="" style=""><div class="menuItem"><div class="menuIco"><img  src="img/comm/img_load.gif" data-original="https://cdn.yun.sooce.cn/6/34355/png/1631181825750a7a640517c4eb620.png?version=1631181940" alt="产品服务"></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#0071dc" ><div class="menuName" style="color:#666666;">服务器</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(typeof(BodyIsFt) == 'undefined' || BodyIsFt == null){
+				    BodyIsFt = 0;
+                }
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})
+           }
+        })
+        </script><li style="height:100%;padding-top:2px;">
+							<a href="javascript:void(0);" class="" style=""><div class="menuItem"><div class="menuIco"><img  src="img/comm/img_load.gif" data-original="https://cdn.yun.sooce.cn/6/34355/png/1631181825751c180c51503810a52.png?version=1631181940" alt="解决方案"></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#0071dc" ><div class="menuName" style="color:#666666;">论坛</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(typeof(BodyIsFt) == 'undefined' || BodyIsFt == null){
+				    BodyIsFt = 0;
+                }
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})
+           }
+        })
+        </script><li style="height:100%;padding-top:2px;">
+							<a href="javascript:void(0);" class="" style=""><div class="menuItem"><div class="menuIco"><img  src="img/comm/img_load.gif" data-original="https://cdn.yun.sooce.cn/6/34355/png/16311818257510bdcfe072e983d57.png?version=1631181940" alt="联系我们"></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#0071dc" ><div class="menuName" style="color:#666666;">联系我们</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(typeof(BodyIsFt) == 'undefined' || BodyIsFt == null){
+				    BodyIsFt = 0;
+                }
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})
+           }
+        })
+        </script></ul></div>
+<script>
+$(function(){
+    $(".showSubMenu").click(function(){
+        $(this).next().toggle();
+		$(this).parent("li").siblings("li").children(".showSubMenu").next().css("display","none");
+    });
+    var bottomLen = $(".bottomMenu > ul > li > a").length;
+    var url = window.location.pathname;
+    var loc = url.substring(url.lastIndexOf("/")+1, url.length);
+    for(var i=0;i<bottomLen;i++){
+        var curObj = $(".bottomMenu ul li a").eq(i);
+        if(loc == curObj.attr("href")){
+            var img = curObj.children(".menuItem").children(".menuIco").children("img").attr("src");
+            var menuIcon = curObj.children(".menuItem").children(".menuIcon").val();
+            var menuColor = curObj.children(".menuItem").children(".menuColor").val();
+            var menuName = curObj.children(".menuItem").children(".menuName").html();
+            if(menuIcon != ""){
+                curObj.children(".menuItem").children(".menuIco").children("img").attr("src",menuIcon);
+            }
+            if(menuColor != ""){
+                curObj.children(".menuItem").children(".menuName").css("color",menuColor);
+            }
+        }
+    }
+});
+$(window).resize(function(){
+    if($("body").width()<640){
+        var bottomHeight = $(".bottomMenu").height();
+        $("body").css("padding-bottom",bottomHeight+"px");
+    }else{
+        $("body").css("padding-bottom","0px");
+    }
+});
+</script>
+<script>
+    $(function () {
+        sendBatch(batchArr);
+    });
+</script>
+<script type="text/javascript" src="https://trial-admin.nb.tencentsite.com/webapp/UserPanel/share/js.js" charset="utf-8"></script>
+</body>
+</html>
